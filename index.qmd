@@ -1,0 +1,70 @@
+---
+title: "GES 109: Organização e Apresentação de Dados"
+execute: 
+  freeze: false
+---
+
+Essa página contém o resumo dos tópicos e avaliações da disciplina. O cronograma será atualizado ao longo do semestre e o tempo destinado aos tópicos pode ser ajustado se necessário.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(googlesheets4)
+library(gt)
+library(tidyverse)
+gs4_deauth()
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1uDx0kdEL0ZIdU_yFUySETuZTFyCQgDzC-2qPQmdENcw/edit?usp=sharing")
+```
+
+```{r}
+#| echo: false
+d |>
+  #filter(!is.na(session)) |>
+  select(-Ds, -Conteúdo, -Material) |>
+  mutate(Data = as.Date(Data)) |>
+  gt() |>
+  fmt_date(Data, date_style = 10) |>
+  sub_missing(columns = c(Semana, Preparação, Tópico, Avaliação), missing_text = "") |>
+  cols_align(
+    align = "center", 
+    columns = c(Semana)
+  ) |>
+  cols_align(
+    align = "right", 
+    columns = c(Data)
+  ) |>
+  cols_align(
+    align = "left", 
+    columns = c(Tópico, Preparação, Avaliação)
+  ) |>
+  tab_style(
+    style = cell_borders(
+      sides = "right",
+      color = "#D3D3D3",
+      style = "solid"
+    ),
+    locations = cells_body(
+      columns = c(Data, Tópico, Preparação)
+    )
+  ) |>
+  fmt_markdown(
+    columns = c(Tópico, Preparação, Avaliação)
+  ) |>
+  cols_width(
+    Semana ~ px(100),
+    Data ~ px(100), 
+    Preparação ~ px(200),
+    Tópico ~ px(250),
+    Avaliação ~ px(150)
+  ) |>
+  cols_label_with(fn = function(x) {
+    x %>%
+      toupper() %>%
+      stringr::str_replace_all("^|$", "**") %>%
+      gt::md()
+  })|>
+  tab_options(table.font.size = 13) |>
+  opt_row_striping()
+```

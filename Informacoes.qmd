@@ -1,0 +1,21 @@
+---
+title: " "
+format: html
+editor: visual
+---
+
+# GES 109 Organização e Apresentação de Dados - 2024/01
+
+::: {style="text-align: justify;"}
+O objetivo deste curso é fornecer as ferramentas que você precisa para explorar, visualizar e analisar dados a fim de entender fenômenos e investigar padrões. Você irá aprender sobre limpeza e organização de bases de dados, visualização, análise exploratória de dados (EDA - *Exploratory Data Analysis*) e formas efetivas de comunicar seus resultados. A disciplina será composta por aulas teórico-práticas e projetos, com foco na linguagem de programação R. Ela é destinada aos estudantes do primeiro período do curso de bacharelado em Estatística da Universidade Federal de Lavras (UFLA).
+:::
+
+## Aulas
+
+|          |                              |
+|----------|------------------------------|
+| Local    | Sala DES-01 (Prédio do ICET) |
+| Horários | Segunda-feira, 14:00 - 16:30 |
+|          | Terça-feira, 08:00 - 9:40    |
+|          | Quarta-feira, 14:00 - 16:30  |
+|          | Quinta-feira, 14:00 - 15:40  |

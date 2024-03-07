@@ -1,0 +1,92 @@
+---
+title: "Suporte"
+format: html
+---
+
+::: {style="text-align: justify;"}
+Ao longo do curso vocês poderão enfrentar dificuldades por diversas razões e em diferentes aspectos. Queremos que vocês sejam capazes de identificar essas dificuldades e se sintam à vontade para buscar ajuda.
+:::
+
+## Ambiente de sala de aula
+
+::: {style="text-align: justify;"}
+Se você tiver dúvidas durante a aula, por favor, pergunte. Não existe dúvida "boba". Estamos todos aprendendo juntos (sim, nós professores também aprendemos muito com vocês. Suas dúvidas ou dificuldades são um guia importante para o nosso trabalho). Além disso, outros colegas podem ter a mesma dúvida que você e ao perguntar você cria um ambiente de aprendizado para todos.
+:::
+
+## Atendimento extra
+
+::: {style="text-align: justify;"}
+A equipe de docentes e monitores estará disponível nos horários indicados para auxiliar em questões relacionadas ao conteúdo do curso e atividades avaliativas. Vocês são muito bem-vindos para sanar suas dúvidas ou, caso não tenham, passe para nos dar um "oi".
+:::
+
+|                               |                   |                                  |                          |
+|-------------------|-----------------|---------------------|-----------------|
+|                               | **Nome**          | **Dia e Horário de atendimento** | **Local de atendimento** |
+| ![](izabela.png){width="80"}  | Prof. Izabela     | Terça-feira, 13:30-15:30         | Gabinete no DES          |
+| ![](luizpala.png){width="80"} | Prof. Luiz Otávio | Quinta-feira, 10:00-12:00         | Gabinete no DES          |
+
+## Fórum no campus virtual
+
+::: {style="text-align: justify;"}
+Se você tem uma pergunta e prefere escrever em vez de perguntar pessoalmente, pode usar o recurso do fórum, no campus virtual. Essa ferramenta permite que você veja as perguntas postadas pelos colegas e responda, caso saiba a resposta para alguma delas.
+:::
+
+## E-mail
+
+::: {style="text-align: justify;"}
+Use a comunicação por e-mail para questões pessoais, que não são apropriadas para serem tratadas publicamente (durante a aula ou no fórum). Para tratar esses assuntos, você pode enviar um e-mail diretamente para um dos docentes responsáveis pela disciplina, Izabela Oliveira ([izabela.oliveira\@ufla.br](mailto:izabela.oliveira@ufla.br)) e Luiz Otávio Pala ([luizpala\@ufla.br](mailto:luizpala@ufla.br)). Ao enviar o e-mail, por favor, inclua **"GES 109" no assunto** da mensagem.
+:::
+
+## Acesso ao material da disciplina
+
+### Livros
+
+::: {style="text-align: justify;"}
+Os livros que serão utilizados nessa discipina estão disponíveis gratuitamente no formato online. O acesso poderá ser feito pelo link compartilhado nas referências do plano de ensino ou pelas bibliotecas digitais da UFLA, que são a [Biblioteca Virtual](http://www.biblioteca.ufla.br/pergamum/biblioteca_s/php/login_usu.php?flag=pearson_redirect.php) e a [Minha Biblioteca](http://www.biblioteca.ufla.br/pergamum/biblioteca_s/php/login_usu.php?flag=minhabiblioteca_redirect.php). A busca pelos títulos pode ser feita diretamente pela ferramenta [Busca ao acervo](http://www.biblioteca.ufla.br/pergamum/biblioteca/index.php).
+:::
+
+Em caso de dúvidas ou problemas no acesso ao acervo, consulte o [suporte da Biblioteca](https://bibliotecauniversitaria.ufla.br/perguntas-frequentes).
+
+### Computador
+
+::: {style="text-align: justify;"}
+Cada ingressante receberá um computador pessoal (laptop) que poderá ser utilizado para o acompanhamento do curso. É sua responsabilidade zelar pelo equipamento, evitando danos, furtos e mantendo-o em bom estado de funcionamento.
+
+Além dos laptops, caso necessário, vocês poderão utilizar os computadores do Laboratório de Análise de Dados do Departamento de Estatística (LAD-DES). O acesso ao laboratório deve ser solicitado ao Coordenador ([paulo.guimaraes\@ufla.br](mailto:paulo.guimaraes@ufla.br)), mas a utilização das máquinas requer treinamento.
+:::
+
+## Suporte acadêmico na UFLA
+
+::: {style="text-align: justify;"}
+Para atendimento e dúvidas sobre as rotinas acadêmicas, entre em contato com a secretaria integrada do [ICET](https://icet.ufla.br/) pelo telefone (35) 3829-1961 ou pelo e-mail ([graduacao_si.icet\@ufla.br](mailto:graduacao_si.icet@ufla.br)).
+
+O [calendário letivo](https://prograd.ufla.br/component/content/article/2-uncategorised/1218-calendario-letivo-2024-1-campi-sede-e-paraiso-unificado-cursos-presenciais), cronograma acadêmico, resoluções e outras orientações relaciondas à graduação na UFLA são encontradas na página da [Pró Reitoria de Graduação (PROGRAD-UFLA)](https://prograd.ufla.br/).
+:::
+
+## Saúde mental e necessidades educacionais específicas (NEE)
+
+::: {style="text-align: justify;"}
+A [Pró Reitoria de Assuntos Estudantis e Comunitários (PRAEC)](https://praec.ufla.br/) é o órgão responsável pelas políticas de assistência estudantil e comunitária promovidas pela UFLA. O Setor de Acessibilidade e Inclusão coordena o [Programa de Apoio a Discentes com Necessidades Educacionais Específicas - PADNEE](https://praec.ufla.br/setores/acessibilidade-e-inclusao), que oferece apoio para estudantes que possuam necessidades educacionais específicas. Podem se inscrever no programa discentes com necessidades específicas (NEE), a saber:
+:::
+
+-   Deficiência visual, auditiva, física, intelectual ou múltipla;
+
+-   Transtornos globais do desenvolvimento;
+
+-   Altas habilidades/superdotação;
+
+-   Transtornos específicos de aprendizagem;
+
+-   Limitações temporárias de ordem motora, visual ou auditiva.
+
+Entre em contato com o Programa de Apoio a Discentes com Necessidades Educacionais Específicas - PADNEE pelo e-mail [padnee.praec\@ufla.b](#0)r
+
+::: {style="text-align: justify;"}
+O [núcleo de saúde mental (NSM)](https://praec.ufla.br/saude/?page_id=543) está inserido na estrutura da Coordenadoria de Saúde da PRAEC e desenvolve ações voltadas à promoção de saúde mental e melhoria da qualidade de vida da comunidade acadêmica. Há psicólogos e psiquiatras para acolhimento psicológico dos estudantes da UFLA. Consulte o site do núcleo para mais informações.
+:::
+
+## Suporte com o Campus virtual
+
+::: {style="text-align: justify;"}
+Para acompanhar o curso e acessar os materiais disponibilizados (notas de aulas, slides, roteiros de práticas e atividades avaliativas) você deverá utilizar o [Campus Virtual](https://campusvirtual.ufla.br/site_campus/). O suporte técnico está disponível pelo telefone (35) 3829-1909 ou pela ferramenta de suporte pelo GLPI, disponível no Menu do site após o login.
+:::

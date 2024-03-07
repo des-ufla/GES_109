@@ -1,0 +1,5 @@
+---
+title: "Roteiros das práticas"
+---
+
+## [Prática do dia 12/03/24](aulas_praticas/pratica_12_03/pratica.qmd)

@@ -1,0 +1,568 @@
+---
+title: <b> <span style="color:cornflowerblue"> Olá participantes! </span> </b>
+subtitle: Bem-vindos à GES109!
+format: 
+  revealjs:
+      incremental: true
+      #chalkboard: true  ## opcao de lousa
+      #embed-resources: true
+editor: source
+execute:
+  freeze: auto
+  echo: true
+  warning: true
+title-slide-attributes:
+    data-background-image: imagens/back.png
+    data-background-size: contain
+    data-background-opacity: "0.6"
+author: Izabela Oliveira - Luiz Pala
+date: 2024/01
+---
+
+# [<span style="font-size: 0.6em"> **Conhecendo os professores**]{style="color:cornflowerblue"}
+
+::: columns
+::: {.column width="50%"}
+**Izabela Oliveira**
+:::
+
+::: {.column width="50%"}
+![](imagens/izabela.png){fig-alt="" fig-align="center" width="250" height="250"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+**Luiz Otávio Pala**
+:::
+
+::: {.column width="50%"}
+![](imagens/luizpala.png){fig-alt="" fig-align="center" width="250" height="250"}
+:::
+:::
+
+# [<span style="font-size: 0.6em">Conhecendo uns aos outros]{style="color:cornflowerblue"}
+
+-   Qual é o seu nome e de qual cidade você é?<br><br>
+
+-   Quais são seus interesses ou *hobbies* fora da sala de aula?<br><br>
+
+-   Já conhecia a UFLA?<br><br>
+
+-   Já teve alguma experiência com estatística ou fez algum curso técnico?
+
+# [<span style="font-size: 0.6em">Sites importantes]{style="color:cornflowerblue"}
+
+::: {style="text-align: justify;"}
+-   *Campus virtual*: é o ambiente onde estarão disponíveis as informações e conteúdos das disciplinas. Você pode acessá-lo nesse [*link*](https://campusvirtual.ufla.br/site_campus/).<br><br>
+
+-   *Biblioteca*: temos uma biblioteca física e alguns livros também estão disponíveis virtualmente.<br><br>
+
+-   Obs.: para ter acesso à biblioteca, vocês precisarão solicitar o [*cartão de identifcação*](https://kb.ufla.br/books/solicitacoes-de-servicos/chapter/cartao-de-identificacao-institucional).<br><br>
+:::
+
+## [Nossa biblioteca virtual]{style="color:cornflowerblue"}
+
+![](imagens/biblioteca.png){fig-alt="" fig-align="center" width="900" height="600"}
+
+
+---
+
+
+![](imagens/biblioteca_virtual.png){fig-alt="" fig-align="center" width="900" height="600"}
+
+# [<span style="font-size: 0.6em">Estatística e Ciência de dados]{style="color:cornflowerblue"}
+::: {style="text-align: justify;"}
+Alguns autores discutem as terminologias Ciência de dados e Estatística.<br><br>
+
+- Morettin e Singer (2021): Ciência de dados consiste principalmente na aplicação de técnicas estatísticas a problemas que exigem grande capacidade computacional;<br><br>
+
+- Outros apontam que a Ciência de Dados é uma área multidisciplinar, envolvendo campos como computação, matemática, estatística.
+:::
+
+---
+
+
+![](imagens/datascience){fig-alt="" fig-align="center" width="500" height="450"}
+
+::: aside
+Fonte: [Universidade do Arizona](https://data.library.arizona.edu/data-science).
+:::
+
+
+
+# [<span style="font-size: 0.6em">Funcionamento da GES-109]{style="color:cornflowerblue"}
+::: {style="text-align: justify;"}
+
+- Ainda nessa semana, serão apresentadas as normas da nossa disciplina;<br><br>
+
+- Bem como os horários de assistência;<br><br>
+
+- Questões de acessibilidade do site e inclusão;
+:::
+
+
+
+# [<span style="font-size: 0.6em">Uma visão sobre a GES109]{style="color:cornflowerblue"}
+
+![](imagens/esquema_ges109)
+
+## [Visualização de dados]{style="color:cornflowerblue"}
+
+::: {style="text-align: justify;"}
+A visualização de dados é uma tarefa muito importante na estatística. Um bom processo de visualização poderá:<br><br>
+
+-   apontar situações esperadas ou não esperadas a respeito do comportamento dos dados;<br><br>
+
+-   sugerir se estamos fazendo a pergunta adequada e respeito do fenômeno ou se precisamos coletar novos dados.
+:::
+
+------------------------------------------------------------------------
+
+::: {.nonincremental}
+::: {style="text-align: justify;"}
+A visualização exige que o humano interprete as informações transmitidas. Para isso, é necessário:<br><br>
+
+-   ser claro na informação que queremos transmitir;
+
+-   escolher formas e gráficos apropriados;
+
+-   evitar poluição visual com elementos desnecessários;
+
+-   rotular os eixos e inserir títulos que facilitem a compreensão;
+
+-   usar cores que sejam fáceis de distinguir e que contrastem bem entre si.
+:::
+:::
+
+---
+
+
+::: {.column style="width: 80%; background-color: rgba(70, 130, 180, 0.7); padding: 50px; border-radius: 0px; text-align: justify; position: absolute; left: 50%; transform: translateX(-50%);"}
+
+Um bom gráfico possibilita a localização de tendências e relacionamentos que podem passar despercebidos se observarmos apenas os números (Schmulle, 2019).
+
+:::
+
+
+
+------------------------------------------------------------------------
+
+### Exemplo 1
+
+Suponha que estamos fazendo uma pesquisa sobre a idade de um grupo de 11 pessoas. Ao anotar todas as idades, obtivemos o seguinte gráfico:
+
+```{r, warning = FALSE, message = FALSE, fig.align='center'}
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
+#| eval: true
+
+library("gamlss.dist")
+Idade <- c(rNBI(10, 20), 145)
+Idade <- sample(Idade)
+plot(Idade, pch = 16, col = "steelblue", xlab = "Participante",
+    ylab = "Idade")
+points(which.max(Idade), Idade[which.max(Idade)], col = "red", pch = 16)
+```
+---
+
+::: {.nonincremental}
+- O que podemos dizer a respeito desse gráfico?<br><br>
+
+
+- Há alguma informação ou comportamento não esperado nesses dados?
+:::
+
+
+------------------------------------------------------------------------
+
+
+### Exemplo 2
+::: {style="text-align: justify;"}
+Estamos analisando, de forma espacial, o aumento populacional de Minas Gerais entre os anos de 2010 e 2022, utilizando os dados do Censo.<br><br>
+
+<b>Obs.:</b> O Censo é a principal fonte de dados sobre a situação de vida da população nos municípios e localidades. São coletadas informações para a definição de políticas públicas em nível nacional, estadual e municipal (Brasil, 2024).
+:::
+
+---
+
+#### População MG - 2010
+
+```{r, warning = FALSE, message = FALSE, fig.align='center'}
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
+#| eval: true
+library("readxl")
+library("geobr")
+library("ggplot2")
+library("plotly")
+library("dplyr")
+
+df = read_municipality(code_muni = "MG",year = 2010,simplified = TRUE,showProgress = F)
+pop = read_excel("imagens/dados_pop.xlsx")
+
+muni = cbind(df, pop)
+
+m = ggplot() +
+  geom_sf(data = muni, aes(fill = pop_2010, text = paste("Cidade: ", name_muni, "<br>População: ", pop_2010)),
+          color = NA, size = 0.15) +
+  scale_fill_gradient(
+    name = "População 2010",
+    low = "gray70",
+    high = "red",
+    guide = guide_colorbar()) +
+  theme_classic() +
+  theme(axis.text = element_text(color = "black"),
+        axis.title = element_text(color = "black"))+
+  labs(x = "Longitude", y = "Latitude")
+ggplotly(m, tooltip = "text") %>%
+  layout(hoverlabel = list(bgcolor = "white", font = list(color = "black")))
+
+```
+
+------------------------------------------------------------------------
+
+#### População MG - 2022
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.align='center'}
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
+#| eval: true
+m = ggplot() +
+  geom_sf(data = muni, aes(fill = pop_2022, text = paste("Cidade: ", name_muni, "<br>População: ", pop_2022)),
+          color = NA, size = 0.15) +
+  scale_fill_gradient(
+    name = "População 2022",
+    low = "gray70",
+    high = "red",
+    guide = guide_colorbar()) +
+  theme_classic() +
+  theme(axis.text = element_text(color = "black"),
+        axis.title = element_text(color = "black"))+
+  labs(x = "Longitude", y = "Latitude")
+ggplotly(m, tooltip = "text") %>%
+  layout(hoverlabel = list(bgcolor = "white", font = list(color = "black")))
+
+```
+
+------------------------------------------------------------------------
+
+#### As populações cresceram?
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.align='center'}
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
+#| eval: true
+
+# crescimento das populacoes
+muni$crescimento = ifelse(muni$variacao>=0,"Positiva","Negativa")
+m = ggplot() +
+  geom_sf(data = muni, aes(fill = factor(crescimento), text = paste("Município: ", name_muni, "<br>Crescimento: ", round(variacao,3))),
+          color = NA, size = 0.15) +
+  scale_fill_manual(
+    name = "Variação",
+    values = c("steelblue", "gray")) +
+  theme_classic() +
+  theme(axis.text = element_text(color = "black"),
+        axis.title = element_text(color = "black"),
+        legend.position = c(0.17, 0.9),
+        legend.box = "horizontal") +
+  labs(x = "Longitude", y = "Latitude")
+# coordenadas de lavras
+arrow_data = data.frame(lon = -44.9998, lat = -21.2457, label = "Lavras")
+m = m + geom_text(data = arrow_data, aes(x = lon + 2.5, y = lat - 2.2, label = label), size = 3, color = "black") +
+  geom_segment(data = arrow_data, aes(x = lon, y = lat, xend = lon + 2, yend = lat - 2),
+               arrow = arrow(length = unit(0.05, "inches")), color = "black", size = 0.2)
+
+# usando o plotly
+ggplotly(m, tooltip = "text") %>%
+  layout(hoverlabel = list(bgcolor = "white", font = list(color = "black")))
+```
+
+---
+
+::: {style="text-align: justify;"}
+Que informações podemos extrair dessa figura?
+:::
+
+
+
+## [Transformação de dados]{style="color:cornflowerblue"}
+
+::: {style="text-align: justify;"}
+
+A visualização é crucial para obter ideias, porém, é raro ter os dados prontos exatamente como são necessários. Frequentemente precisaremos:<br><br>
+
+- criar novas variáveis;
+
+- obter resumos das variáveis;
+
+- reordenar as observações para tornar os dados mais fáceis de trabalhar.
+:::
+::: aside
+Fonte: [R para ciência de dados, 2024](https://r4ds.hadley.nz/data-transform.html).
+:::
+
+---
+
+### Exemplo 1
+Voltando ao exemplo do crescimento populacional, podemos ordernar as cidades de acordo com o tamanho da população em 2022.
+
+
+::: {.panel-tabset}
+
+### Dados não ordenados
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.align='center'}
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
+#| eval: true
+library("readxl")
+pop = read_excel("imagens/dados_pop.xlsx")
+pop$name_muni = gsub("[0-9]", "", pop$name_muni)
+head(pop[,c(1,2,3)])
+```
+
+### Dados ordenados
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.align='center'}
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
+#| eval: true
+library("readxl")
+library("dplyr")
+pop = read_excel("imagens/dados_pop.xlsx")
+pop$name_muni = gsub("[0-9]", "", pop$name_muni)
+head(pop[,c(1,2,3)] %>% arrange(desc(pop_2022)))
+```
+:::
+
+
+
+## [Modelagem de dados]{style="color:cornflowerblue"}
+
+::: {style="text-align: justify;"}
+O objetivo de um modelo é fornecer um resumo simples e de baixa dimensão de um conjunto de dados. Modelos nos ajudam:<br><br>
+
+- a extrair padrões conhecidos;
+
+- a descobrir relacionamentos interessantes;
+
+- <b>Obs.:</b>Durante a graduação em Estatística, veremos procedimentos para a construção de modelos.
+:::
+
+::: aside
+Fonte: [R para ciência de dados, 2024](https://r4ds.had.co.nz/model-intro.html).
+:::
+
+
+---
+
+### Legal, né? 
+<br><br>
+
+```{=html}
+<style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+</style>
+
+<iframe src="https://giphy.com/embed/Hc8PMCBjo9BXa" width="335" height="400" frameBorder="0" class="giphy-embed center" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/applause-laughing-Hc8PMCBjo9BXa"></a></p>
+
+```
+
+
+## [Análise exploratória de dados - EDA]{style="color:cornflowerblue"}
+
+A EDA é um ciclo iterativo, em que temos os seguintes passos:<br><br>
+- Geramos perguntas sobre os dados; <br><br>
+- Procuramos respostas visualizando, transformando e modelando os dados;<br><br>
+- Refinamos as perguntas e/ou geramos novas perguntas.
+
+::: aside
+Fonte: [R para ciência de dados, 2024](https://r4ds.had.co.nz/model-intro.html).
+:::
+
+
+# [<span style="font-size: 1em">Ferramentas]{style="color:cornflowerblue"}
+
+## *O Microsoft Office* e similares
+
+::: r-stack
+![](imagens/excel.png){.fragment width="700" height="500"}
+
+![](imagens/epi_info.png){.fragment width="700" height="500"}
+:::
+
+
+---
+
+::: {.nonincremental}
+::: {style="text-align: justify;"}
+Algumas empresas já oferecem serviços para análise e visualização de dados. Vejamos exemplos:<br><br>
+
+- *Microsoft Azure*: integra-se com várias ferramentas de visualização de dados (Microsoft, 2024);<br><br>
+
+- *Looker Studio*: converte dados em informações fáceis de ler e compartilhar (Google, 2024);<br><br>
+
+- *Google Colaboratory* (COLAB): é adequado para aprendizado de máquina, análise de dados e educação (Google, 2024).<br><br>
+
+:::
+:::
+
+---
+
+### Exemplo: Google Colab
+::: r-stack
+![](imagens/colab.png){.fragment width="900" height="600"}
+:::
+
+
+## O programa *R*
+
+É um programa livre para computação estatística e gráfica.
+
+::: r-stack
+![](imagens/exemplo_r.png){.fragment width="700" height="500"}
+:::
+
+## RStudio
+
+::: {style="text-align: justify;"}
+É um ambiente de desenvolvimento integrado (Integrated Development Environment - IDE). Uma **IDE** é um conjunto de ferramentas disponíveis em uma interface mais amigável para a programação.
+
+Alguns Benefícios:
+
+-   Ajudar os desenvolvedores a serem mais produtivos (POSIT, 2024);
+-   Possibilitar uma melhor <u>indentação</u> ('organização') do código.
+:::
+
+------------------------------------------------------------------------
+
+::: {.nonincremental}
+::: columns
+::: {.column width="50%"}
+![](imagens/r-logo.png){fig-alt="R logo" fig-align="center"}
+
+-   R é uma linguagem de programação estatística;
+-   É facilmente extensível com pacotes.
+:::
+
+::: {.column .fragment width="50%"}
+![](imagens/rstudio-logo.png){fig-alt="RStudio logo"}
+
+-   O RStudio é uma IDE, por exemplo: "Eu escrevo código R na IDE do RStudio".
+-   É comumente utilizado por programadores R e cientistas de dados;
+:::
+
+::: aside
+Fonte: [Çetinkaya-Rundel, 2024](https://sta199-s24.github.io/).
+:::
+:::
+:::
+
+## R vs. RStudio
+
+[![](imagens/r_vs_rstudio.png){fig-alt="On the left: a car engine. On the right: a car dashboard. The engine is labelled R. The dashboard is labelled RStudio." fig-align="center" width="1001"}](https://moderndive.com/1-getting-started.html)
+
+::: aside
+Fonte: [adaptado de Çetinkaya-Rundel (2024)](https://sta199-s24.github.io/).
+:::
+
+# [<span style="font-size: 1em">Instalações]{style="color:cornflowerblue"}
+
+<b></b> Nessa parte da aula, aprenderemos as etapas iniciais de instalação dos programas *R*, *RStudio* e *MiKTeX*.
+
+## Instalação do *R*
+
+------------------------------------------------------------------------
+
+### *Download* do *R* (.exe)
+
+::: {style="text-align: justify;"}
+O primeiro passo é acessar esse [*link*](https://cran.r-project.org/bin/windows/base/) para encontrar o arquivo executável.<br><br>
+
+O executável é um arquivo que contém o programa a ser instalado, de modo que o nosso sistema operacional o execute diretamente.
+:::
+
+------------------------------------------------------------------------
+
+Seguindo o *link*, essa página será aberta em seu navegador:
+
+![](imagens/r_base_instalacao){fig-alt="" fig-align="center" width="850" height="500"}
+
+Acesse o item *Download R-4.3.2 for Windows*.
+
+------------------------------------------------------------------------
+
+### Etapa final da instalação
+
+::: {style="text-align: justify;"}
+-   Procure o arquivo *R-4.3.2-win* em *Downloads* e execute-o.<br><br>
+
+-   Autorize as permissões de instalação;<br><br>
+
+-   Selecione o idioma "Português Brasileiro";<br><br>
+
+-   Clique em "Avançar" para proceder com a instalação.
+:::
+
+------------------------------------------------------------------------
+
+## Instalação do *RStudio* ![](imagens/logo_rstudio){fig-alt="" fig-align="center" width="50" height="50"}
+
+------------------------------------------------------------------------
+
+### *Download* do *RStudio* (.exe)
+
+::: {style="text-align: justify;"}
+Acesse o [*link*](https://posit.co/download/rstudio-desktop/) e entre em "Download RStudio desktop for Windows".
+
+![](imagens/rstudio_i){fig-alt="" fig-align="center" width="800" height="500"}
+:::
+
+------------------------------------------------------------------------
+
+### 
+
+::: columns
+-   Busque o arquivo em sua pasta "downloads" e execute-o;<br><br>
+-   Permita que o aplicativo faça alterações em seu dispositivo;<br><br>
+-   Proceda com a instalação;<br><br>
+-   Feito isso, o RStudio estará instalado em sua máquina;<br><br>
+-   Obs.: Para outros sistemas operacionais, verifique as opções de instalação nesse [*link*](https://www.r-project.org/).
+:::
+
+## Instalação do MiKTeX
+
+Por quê devo instalar o *MiKTeX*?
+
+-   O *MiKTeX* é um programa que nos permite construir arquivos no formato *TeX/LaTeX*;<br><br>
+
+-   Isso permite que façamos textos e documentos de alta qualidade;<br><br>
+
+-   Utilize esse [*link*](https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-24.1-x64.exe) para fazer o *download* do *MiKTeX* em seu computador;
+
+------------------------------------------------------------------------
+
+### Etapa de instalação
+
+-   Encontre o arquivo *basic-miktex-24.1-x64* em sua pasta *downloads* e execute-o; <br><br>
+-   Aceite as condições e prossiga;<br><br>
+-   Proceda a instalação conforme as opções recomendadas.
+
+
+
+## [Fim das instalações]{style="color:cornflowerblue"} {background-image="imagens/back.png" background-size="contain"}
+
+
+
+

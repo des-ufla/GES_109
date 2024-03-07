@@ -1,0 +1,175 @@
+---
+title: "Atividade prática"
+subtitle: "11 de março de 2024"
+format:
+  html:
+    theme:
+      light: [cosmo, sta199.scss]
+      dark: [cosmo, sta199.scss, dark.scss]
+    linkcolor: "#3A5883" 
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y-dark
+    embed-resources: true
+
+execute:
+  freeze: auto
+  echo: false
+editor: source
+---
+
+## [Objetivo e instruções]{.underline}
+
+::: {style="text-align: justify;"}
+Nesta etapa da aula, veremos a utilidade da visualização de dados no programa R. Durante a disciplina também aprenderemos a confeccionar códigos e gráficos similares a estes.
+
+Etapas:
+
+-   Abra o *RStudio* em seu computador;
+-   Utilize o botão "copy to clipboard" para copiar as partes do código (*chunks*) para a sua área de transferência;
+-   Cole as partes do código em um *Script* do *RStudio*;\
+-   Posteriormente, daremos continuidade à execução do código.
+:::
+
+
+## [Prática 1]{.underline}
+::: {style="text-align: justify;"}
+O primeiro conteúdo prático refere-se ao uso da ferramenta *Google trends*. Essa ferramenta permite explorar e analisar as tendências de busca na internet ao longo do tempo. Por exemplo, vejamos a tendência de pesquisa, no Brasil.
+ 
+```{=html}
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3620_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderWidget("dailytrends", "", {"geo":"BR","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+```
+
+
+Vejamos o mecanismo de procura de palavras no [Google trends](https://trends.google.com/trends/){target="_blank"}. Façam buscas de termos como "sisu", "enem" ou termos de seu interesse. 
+:::
+
+### Como buscar e visualizar esses dados no *RStudio*?
+::: {style="text-align: justify;"}
+Utilizaremos um pacote chamado *gtrendsR*. Esse pacote permite fazer buscas de termos, por país e em períodos específicos, que são inseridos como *parâmetros* da função. 
+
+Para começarmos, copie o seguinte código e cole em um novo *script* do *RStudio*. 
+
+- <b>Obs.:</b> Para criar um novo *script*, selecione a opção (+), situada no canto superior esquerdo do *RStudio*, e selecione *R Script*.
+
+Aguarde e solicite as instruções do docente para executar o código.
+
+```{r,warning=FALSE,fig.align='center'}
+#| echo: true
+#| eval: false
+
+# instalando o pacote gtrendsR em seu computador
+if (!requireNamespace("gtrendsR", quietly = TRUE)) {install.packages("gtrendsR")}
+
+# solicitando o pacote na biblioteca
+library("gtrendsR")
+
+# Função para extrair os dados
+extract_gtrends <- function(keywords, geo, onlyInterest = TRUE) {
+  tryCatch({
+    termo <- gtrends(keywords, geo = geo, onlyInterest = onlyInterest)
+    return(termo)
+  }, error = function(e) {
+    message("Erro de solicitação. Esperando 120 segundos para tentar novamente.")
+    Sys.sleep(120)
+    extract_gtrends(keywords, geo, onlyInterest)
+  })
+}
+
+# fazendo a busca pelos termos sisu e enem no Brasil
+termo <- extract_gtrends(c("sisu", "enem"), geo = c("BR"), onlyInterest = T)
+
+# grafico
+plot(termo)
+```
+
+Esse código construirá um gráfico com o número de pesquisas feitas no Brasil com os termos sisu e enem.
+
+- <b>Tarefa.:</b> Vamos buscar novos termos e executar o código. Para isso, devemos substituir a parte `termo <- gtrends(c("sisu", "enem"), geo = c("BR"), onlyInterest = T)` trocando `c("sisu", "enem")` pelo termo de seu interesse. Por exemplo, suponha que desejo buscar o termo *ufla*, então:
+
+```{r,warning=FALSE,fig.align='center',eval=FALSE}
+#| echo: true
+#| eval: false
+
+# solicitando o pacote na biblioteca
+library("gtrendsR")
+
+# PARTE ALTERADA
+termo <- extract_gtrends(c("ufla"), geo = c("BR"), onlyInterest = T)
+
+# grafico
+plot(termo)
+```
+:::
+
+
+## [Prática 2]{.underline}
+::: {style="text-align: justify;"}
+Também podemos estudar informações espaciais no *R*. Uma forma é localizar e apresentar informações em mapas.
+
+Nessa segunda atividade prática, vamos apresentar um mapa com a localização da cidade de Lavras, Minas Gerais, fornecendo as coordenadas (longitude e latitude) no código. 
+
+Assim como realizado na atividade prática 1, copie o código abaixo e cole em um novo *script* do *RStudio*.  
+
+:::
+
+```{r}
+#| echo: true
+
+# instalando o pacote leaflet em seu computador
+if (!requireNamespace("leaflet", quietly = TRUE)) {install.packages("leaflet")}
+
+# coordenadas
+longitude <- -44.998950
+latitude <- -21.229180
+
+# construindo o mapa
+library(leaflet)
+m <- leaflet() %>%
+  addTiles(urlTemplate = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png') %>%
+  setView(lng = longitude, lat = latitude, zoom = 6) %>%
+  addMarkers(lng = longitude, lat = latitude)
+m
+```
+
+::: {style="text-align: justify;"}
+
+<b>Tarefa:</b> Vamos adicionar mais uma localidade a esse gráfico. Que tal a localização de sua cidade?
+
+Para isso, precisamos buscar as coordenadas. Uma forma de fazer isso é buscar usando a ferramenta *maps* da *Google*. Inicialmente, acessem [Maps](https://maps.google.com/){target="_blank"} e digitem o nome do local de interesse. 
+
+<b>Passos para buscar as coordenadas:</b>
+
+- Digite o nome do local na ferramenta de busca do *maps*, situada no canto superior esquerdo;
+- No mapa gerado, aponte a seta para o local desejado, clique com o botão esquerdo do *mouse* ou do *touchpad* e copie as coordenadas que aparecerão.
+- O primeiro termo refere-se à latitude e o segundo é a longitude.
+
+
+Por exemplo, incluindo as coordenadas (-45.48012; -21.58266) no mapa:
+
+
+
+```{r}
+#| echo: true
+# coordenadas de lavras
+longitude <- -44.998950
+latitude <- -21.229180
+
+# novas coordenadas
+longitude_1 = -45.48012
+latitude_1 = -21.58266
+
+# construindo o mapa
+library(leaflet)
+m <- leaflet() %>%
+  addTiles(urlTemplate = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png') %>%
+  setView(lng = longitude, lat = latitude, zoom = 6) %>%
+  addMarkers(lng = longitude, lat = latitude) %>%
+  addMarkers(lng = longitude_1, lat = latitude_1)
+m
+```
+
+Busquem e reproduzam o mapa substituindo `longitude_1` e `latitude_1` por novas coordenadas. Vamos tentar?
+:::

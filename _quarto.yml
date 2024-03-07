@@ -1,0 +1,78 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "GES109"
+  description: "Página da GES109 - UFLA"
+  site-url: ""
+
+  repo-url: ""
+  repo-actions: [edit, issue]
+
+  sidebar:
+    background: "#d1dceb" #estava #3A5883
+    logo: "img/logo.png" ## ou logo.jpg
+    pinned: true
+    align: center
+    tools:
+      - icon: bookmark
+        href: https://des.ufla.br/
+        text: "DES"
+      - icon: book
+        href: https://ufla.br/
+        text: "UFLA"
+      - icon: cast
+        href: https://campusvirtual.ufla.br/site_campus/
+        text: "Campus Virtual"
+        
+    style: docked
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Informações"
+        contents:
+          - href: Informacoes.qmd
+            text: Local e horários de aula
+          - href: planoensino.qmd
+            text: Plano de ensino
+          - href: suporte.qmd
+            text: Suporte
+          - href: index.qmd
+            text: Cronograma
+      - section: "Atividades avaliativas"
+        contents:
+          - href: praticas.qmd
+            text: Práticas
+          - href: extensao.qmd
+            text: Projeto de extensão
+          - href: analisedados.qmd
+            text: Projeto de análise de dados
+      - section: "Material complementar"
+        contents:
+          - href: links.qmd
+            text: Links úteis
+          - href: fichasR.qmd
+            text: Fichas do R
+  page-footer:
+    right: 'Essa página foi construída com [Quarto](https://quarto.org/) e inspirada nos sites de [Mine Çetinkaya-Rundel](https://mine-cr.com/).'
+    left: "&copy; Copyright 2024 Izabela Oliveira e Luiz Otávio Pala "
+    background: "#3A5883" # Pantone Chambray Blue - Spring 2024, darkened to pass contrast checks
+
+format:
+  html:
+    theme:
+      light: [cosmo, sta199.scss]
+      dark: [cosmo, sta199.scss, dark.scss]
+    linkcolor: "#3A5883" # Pantone Chambray Blue - Spring 2024, darkened to pass contrast checks
+    toc: true
+    toc-title: "Conteúdo"
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y-dark
+
+execute:
+  freeze: auto
+
+editor: visual

@@ -1,0 +1,25 @@
+---
+title: "Links para outros materiais"
+---
+
++-----------------------------------+--------------------------------------------------------------------------+
+| Livros sobre R e Ciência de Dados | [R for Data Science](https://r4ds.hadley.nz/)                            |
+|                                   |                                                                          |
+|                                   | [Introduction to Modern Statistics](https://openintro-ims2.netlify.app/) |
++-----------------------------------+--------------------------------------------------------------------------+
+| Documentação de pacotes           | ggplot2: [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/)         |
+|                                   |                                                                          |
+|                                   | dplyr: [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)               |
+|                                   |                                                                          |
+|                                   | tidyr: [tidyr.tidyverse.org](https://tidyr.tidyverse.org/)               |
+|                                   |                                                                          |
+|                                   | forcats: [forcats.tidyverse.org](https://forcats.tidyverse.org/)         |
+|                                   |                                                                          |
+|                                   | stringr: [stringr.tidyverse.org](https://stringr.tidyverse.org/)         |
+|                                   |                                                                          |
+|                                   | lubridate: [lubridate.tidyverse.org](https://lubridate.tidyverse.org/)   |
+|                                   |                                                                          |
+|                                   | readr: [readr.tidyverse.org](https://readr.tidyverse.org/)               |
+|                                   |                                                                          |
+|                                   | readxl: [readxl.tidyverse.org](https://readxl.tidyverse.org/)            |
++-----------------------------------+--------------------------------------------------------------------------+
