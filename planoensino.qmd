@@ -4,7 +4,7 @@ subtitle: "Plano de ensino - Semestre 2024/01"
 format: html
 ---
 ::: {style="text-align: justify;"}
-O objetivo desssa disciplina é fornecer uma introdução à linguagem de programação R, com enfoque à análise exploratória de dados. São apresentadas as características básicas da linguagem, alguns pacotes para manipulação e visualização de dados e ferramentas para comunicação. Para acompanhar o curso, não é necessário ter uma experiência prévia com o R.
+O objetivo dessa disciplina é fornecer uma introdução à linguagem de programação R, com enfoque à análise exploratória de dados. São apresentadas as características básicas da linguagem, alguns pacotes para manipulação e visualização de dados e ferramentas para comunicação. Para acompanhar o curso, não é necessário ter uma experiência prévia com o R.
 
 O curso será composto por encontros com breves apresentações do conteúdo, aulas práticas guiadas e com uso do computador, práticas e projetos individuais e em grupo. As formas de avaliação são variadas e serão realizadas ao longo de todo o semestre.
 :::
