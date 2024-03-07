@@ -169,7 +169,7 @@
     "href": "planoensino.html#dicas-para-o-sucesso-na-disciplina",
     "title": "GES 109: Organização e Apresentação de Dados",
     "section": "Dicas para o sucesso na disciplina",
-    "text": "Dicas para o sucesso na disciplina\nListamos abaixo algumas dicas que podem contribuir para que você tenha um bom desempenho na disciplina:\n✅ Faça a leitura dos textos recomendados, pois isso ajudará na sua compreensão durante a exposição do conteúdo;\n✅ Faça perguntas e questione; isso faz parte do processo de aprendizado. Pergunte aos professores, aos colegas de sala e aos colegas da pós-graduação;\n✅ Faça as atividades práticas que serão propostas durante o semestre;\n✅ Crie o hábito de estabelecer horários para o estudo, de modo a evitar a procrastinação.",
+    "text": "Dicas para o sucesso na disciplina\nListamos abaixo algumas dicas que podem contribuir para que você tenha um bom desempenho na disciplina:\n✅ Faça a leitura dos textos recomendados, pois isso ajudará na sua compreensão durante a exposição do conteúdo;\n✅ Faça perguntas e questione; isso faz parte do processo de aprendizado. Pergunte aos professores, aos colegas de sala e aos colegas da pós-graduação;\n✅ Faça as atividades práticas que serão propostas durante o semestre;\n✅ Crie o hábito de estabelecer horários para o estudo, de modo a evitar a procrastinação.\n✅ Busquem fazer atividades físicas; por sinal, a UFLA tem diversos lugares para isso. Respeitem seus limites; fazer pausas para descanso é muito importante. Além disso, busquem interagir com outros alunos; há espaços e eventos culturais oferecidos pela nossa Universidade que podem ser proveitosos.",
     "crumbs": [
       "Informações",
       "Plano de ensino"
@@ -404,7 +404,7 @@
     "href": "links.html",
     "title": "Links para outros materiais",
     "section": "",
-    "text": "Livros sobre R e Ciência de Dados\nR for Data Science\nIntroduction to Modern Statistics\n\n\nDocumentação de pacotes\nggplot2: ggplot2.tidyverse.org\ndplyr: dplyr.tidyverse.org\ntidyr: tidyr.tidyverse.org\nforcats: forcats.tidyverse.org\nstringr: stringr.tidyverse.org\nlubridate: lubridate.tidyverse.org\nreadr: readr.tidyverse.org\nreadxl: readxl.tidyverse.org",
+    "text": "Livros sobre R e Ciência de Dados\nR for Data Science\nIntroduction to Modern Statistics\n\n\nSite oficial do R e manuais\nSite do R\n\n\nDocumentação de pacotes\nggplot2: ggplot2.tidyverse.org\ndplyr: dplyr.tidyverse.org\ntidyr: tidyr.tidyverse.org\nforcats: forcats.tidyverse.org\nstringr: stringr.tidyverse.org\nlubridate: lubridate.tidyverse.org\nreadr: readr.tidyverse.org\nreadxl: readxl.tidyverse.org",
     "crumbs": [
       "Material complementar",
       "Links úteis"

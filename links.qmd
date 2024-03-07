@@ -7,6 +7,8 @@ title: "Links para outros materiais"
 |                                   |                                                                          |
 |                                   | [Introduction to Modern Statistics](https://openintro-ims2.netlify.app/) |
 +-----------------------------------+--------------------------------------------------------------------------+
+| Site oficial do R e manuais       | [Site do R](https://cran.r-project.org/manuals.html)                     |
++-----------------------------------+--------------------------------------------------------------------------+
 | Documentação de pacotes           | ggplot2: [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/)         |
 |                                   |                                                                          |
 |                                   | dplyr: [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)               |
