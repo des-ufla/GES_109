@@ -404,7 +404,7 @@
     "href": "links.html",
     "title": "Links para outros materiais",
     "section": "",
-    "text": "Livros sobre R e Ciência de Dados\nR for Data Science\nIntroduction to Modern Statistics\n\n\nDocumentação de pacotes\nggplot2: ggplot2.tidyverse.org\ndplyr: dplyr.tidyverse.org\ntidyr: tidyr.tidyverse.org\nforcats: forcats.tidyverse.org\nstringr: stringr.tidyverse.org\nlubridate: lubridate.tidyverse.org\nreadr: readr.tidyverse.org\nreadxl: readxl.tidyverse.org",
+    "text": "Livros sobre R e Ciência de Dados\nR for Data Science\nIntroduction to Modern Statistics\n\n\nSite oficial do R e manuais\nSite do R\n\n\nDocumentação de pacotes\nggplot2: ggplot2.tidyverse.org\ndplyr: dplyr.tidyverse.org\ntidyr: tidyr.tidyverse.org\nforcats: forcats.tidyverse.org\nstringr: stringr.tidyverse.org\nlubridate: lubridate.tidyverse.org\nreadr: readr.tidyverse.org\nreadxl: readxl.tidyverse.org",
     "crumbs": [
       "Material complementar",
       "Links úteis"
