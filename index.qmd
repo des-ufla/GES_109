@@ -26,7 +26,7 @@ d |>
   mutate(Data = as.Date(Data)) |>
   gt() |>
   fmt_date(Data, date_style = 10) |>
-  sub_missing(columns = c(Semana, Preparação, Tópico, Avaliação), missing_text = "") |>
+  sub_missing(columns = c(Semana, Preparação, Tópico, Atividade), missing_text = "") |>
   cols_align(
     align = "center", 
     columns = c(Semana)
@@ -37,7 +37,7 @@ d |>
   ) |>
   cols_align(
     align = "left", 
-    columns = c(Tópico, Preparação, Avaliação)
+    columns = c(Tópico, Preparação, Atividade)
   ) |>
   tab_style(
     style = cell_borders(
@@ -50,14 +50,14 @@ d |>
     )
   ) |>
   fmt_markdown(
-    columns = c(Tópico, Preparação, Avaliação)
+    columns = c(Tópico, Preparação, Atividade)
   ) |>
   cols_width(
     Semana ~ px(100),
     Data ~ px(100), 
     Preparação ~ px(200),
     Tópico ~ px(250),
-    Avaliação ~ px(150)
+    Atividade ~ px(150)
   ) |>
   cols_label_with(fn = function(x) {
     x %>%
