@@ -1,1 +1,1 @@
-Sitemap: https://des-ufla.github.io/GES_109/sitemap.xml
+Sitemap: /sitemap.xml
