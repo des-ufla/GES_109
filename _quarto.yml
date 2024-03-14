@@ -5,7 +5,7 @@ website:
   page-navigation: true
   title: "GES109"
   description: "Página da GES109 - UFLA"
-  site-url: ""
+  site-url: "https://des-ufla.github.io/GES_109/"
 
   repo-url: ""
   repo-actions: [edit, issue]

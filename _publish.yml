@@ -1,9 +1,4 @@
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "expand for full code"
-
-# criando os dados
-x = c(9.44, 17.61, 8.89, 16.94, 10.39)
-mean(x)
-```
+- source: project
+  quarto-pub:
+    - id: c3ea2156-b00e-4e70-9878-a706cf4e2a42
+      url: 'https://luizpala.quarto.pub/ges109'
