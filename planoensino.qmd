@@ -101,8 +101,10 @@ Todos os questionários serão realizados no [Campus Virtual](https://campusvirt
 #### Prova
 
 ::: {style="text-align: justify;"}
-Haverá uma prova nessa disciplina, que inclui uma parte a ser feita em sala de aula (70% da nota) e outra a ser feita em casa (30% da nota). A prova será focada no aprendizado dos conceitos e uma aplicação que envolve o uso de computador. Mais informações sobre a prova serão fornecidas no decorrer do curso.
+Haverá uma prova nessa disciplina, que inclui uma parte teórica (70% da nota) e outra prática (30% da nota). A prova será focada no aprendizado dos conceitos e uma aplicação que envolve o uso de computador. Mais informações sobre a prova serão fornecidas no decorrer do curso.
 :::
+
+
 
 #### Práticas
 
