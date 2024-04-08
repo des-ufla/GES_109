@@ -40,6 +40,8 @@ O cronograma das aulas, com o resumo dos tópicos e uma prévia das datas das at
 -   O material do curso consiste de slides em formato PDF ou HTML, roteiros de aulas práticas, livros e outros materiais complementares que serão indicados. Todo material estará disponível ou indicado no ambiente virtual de aprendizagem [(Campus Virtual)](https://campusvirtual.ufla.br/site_campus/).
 
 -   Em todas as aulas será utilizado o computador pessoal com internet para: 1) usar os programas R e RStudio; 2) acessar o “Campus Virtual” e 3) navegar pelos sites indicados pelos docentes. Todos vocês receberão um computador para ser usado ao longo do curso. A instalação dos programas que serão usados na disciplina será feita na primeira semana de aula, com suporte dos docentes responsáveis.
+
+- Recomenda-se também a utilização de uma calculadora, preferencialmente científica, durante as aulas e atividades teóricas. 
 :::
 
 ### Livros-textos
