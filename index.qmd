@@ -6,6 +6,10 @@ execute:
 
 Essa página contém o resumo dos tópicos e avaliações da disciplina. O cronograma será atualizado ao longo do semestre e o tempo destinado aos tópicos pode ser ajustado se necessário.
 
+::: {style="background-color: #99b3ff; padding: 10px;"}
+⚠️ Devido ao perído de [greve docente](https://ufla.br/noticias/institucional/16735-ufla-recebe-comunicado-de-deflagracao-da-greve-dos-professores) e a [suspensão do calendário](https://ufla.br/noticias/institucional/16749-ufla-suspende-calendario-escolar-2024-dos-cursos-presenciais-de-graduacao-e-pos-graduacao#:~:text=Portal%20UFLA&text=Est%C3%A3o%20suspensos%20os%20cronogramas%20dos,partir%20da%20data%20de%20publica%C3%A7%C3%A3o.) da Universidade Federal de Lavras, as atividades da GES-109 estão <u>pausadas</u>. 
+:::
+
 ```{r}
 #| echo: false
 #| message: false

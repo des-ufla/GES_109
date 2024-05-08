@@ -2,4 +2,4 @@
 title: "Instruções para o projeto de análise de dados"
 ---
 
-Em breve.
+## [Instruções para o projeto](projeto eda/projeto_EDA.html)

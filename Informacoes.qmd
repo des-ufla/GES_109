@@ -1,7 +1,7 @@
 ---
 title: " "
 format: html
-editor: visual
+editor: source
 ---
 
 # GES 109 Organização e Apresentação de Dados - 2024/01
@@ -19,3 +19,16 @@ O objetivo deste curso é fornecer as ferramentas que você precisa para explora
 |          | Terça-feira, 08:00 - 9:40    |
 |          | Quarta-feira, 14:00 - 16:30  |
 |          | Quinta-feira, 14:00 - 15:40  |
+
+
+
+## Atenção
+
+
+::: {style="background-color: #99b3ff; padding: 10px;"}
+Devido ao perído de [greve docente](https://ufla.br/noticias/institucional/16735-ufla-recebe-comunicado-de-deflagracao-da-greve-dos-professores) e a [suspensão do calendário](https://ufla.br/noticias/institucional/16749-ufla-suspende-calendario-escolar-2024-dos-cursos-presenciais-de-graduacao-e-pos-graduacao#:~:text=Portal%20UFLA&text=Est%C3%A3o%20suspensos%20os%20cronogramas%20dos,partir%20da%20data%20de%20publica%C3%A7%C3%A3o.) da Universidade Federal de Lavras, as atividades da GES-109 estão <u>pausadas</u>. 
+:::
+
+
+
+
